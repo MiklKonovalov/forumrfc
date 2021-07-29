@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C64E756226B1A6E3007C34B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E756126B1A6E3007C34B4 /* AppDelegate.swift */; };
+		C64E756426B1A6E3007C34B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E756326B1A6E3007C34B4 /* SceneDelegate.swift */; };
+		C64E756B26B1A6EC007C34B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64E756A26B1A6EC007C34B4 /* Assets.xcassets */; };
+		C64E756E26B1A6EC007C34B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64E756C26B1A6EC007C34B4 /* LaunchScreen.storyboard */; };
+		C64E757926B1A6ED007C34B4 /* Forum_Rugby_ClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E757826B1A6ED007C34B4 /* Forum_Rugby_ClubTests.swift */; };
+		C64E758426B1A6ED007C34B4 /* Forum_Rugby_ClubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E758326B1A6ED007C34B4 /* Forum_Rugby_ClubUITests.swift */; };
+		C64E759226B1A77E007C34B4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E759126B1A77D007C34B4 /* TableViewController.swift */; };
+		C64E759426B1AEB4007C34B4 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E759326B1AEB4007C34B4 /* PlayerTableViewCell.swift */; };
+		C64E759626B1B0F0007C34B4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E759526B1B0F0007C34B4 /* Profile.swift */; };
+		C64E759C26B1C4C6007C34B4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E759B26B1C4C6007C34B4 /* ViewModel.swift */; };
+		C64E759E26B1C5E4007C34B4 /* TableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E759D26B1C5E4007C34B4 /* TableViewModelType.swift */; };
+		C64E75A226B1C9A5007C34B4 /* TableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E75A126B1C9A5007C34B4 /* TableViewCellViewModelType.swift */; };
+		C64E75A426B1CA97007C34B4 /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E75A326B1CA97007C34B4 /* TableViewCellViewModel.swift */; };
+		C64E75A626B1D175007C34B4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E75A526B1D175007C34B4 /* DetailViewController.swift */; };
+		C64E75A826B1D53E007C34B4 /* DetailViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E75A726B1D53E007C34B4 /* DetailViewModelType.swift */; };
+		C64E75AA26B1D577007C34B4 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E75A926B1D577007C34B4 /* DetailViewModel.swift */; };
+		C64E75AC26B2A2E7007C34B4 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E75AB26B2A2E6007C34B4 /* ControllerFactory.swift */; };
+		C64E75AF26B2ADE2007C34B4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E75AE26B2ADE2007C34B4 /* Coordinator.swift */; };
+		C64E75B126B2AE14007C34B4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E75B026B2AE14007C34B4 /* MainCoordinator.swift */; };
+		C64E75B726B2B582007C34B4 /* TableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E75B626B2B582007C34B4 /* TableCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C64E757526B1A6ED007C34B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C64E755626B1A6E2007C34B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C64E755D26B1A6E2007C34B4;
+			remoteInfo = "Forum Rugby Club";
+		};
+		C64E758026B1A6ED007C34B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C64E755626B1A6E2007C34B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C64E755D26B1A6E2007C34B4;
+			remoteInfo = "Forum Rugby Club";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C64E755E26B1A6E3007C34B4 /* Forum Rugby Club.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forum Rugby Club.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64E756126B1A6E3007C34B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C64E756326B1A6E3007C34B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C64E756A26B1A6EC007C34B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C64E756D26B1A6EC007C34B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C64E756F26B1A6EC007C34B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64E757426B1A6ED007C34B4 /* Forum Rugby ClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Forum Rugby ClubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64E757826B1A6ED007C34B4 /* Forum_Rugby_ClubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum_Rugby_ClubTests.swift; sourceTree = "<group>"; };
+		C64E757A26B1A6ED007C34B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64E757F26B1A6ED007C34B4 /* Forum Rugby ClubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Forum Rugby ClubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64E758326B1A6ED007C34B4 /* Forum_Rugby_ClubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum_Rugby_ClubUITests.swift; sourceTree = "<group>"; };
+		C64E758526B1A6ED007C34B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64E759126B1A77D007C34B4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C64E759326B1AEB4007C34B4 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		C64E759526B1B0F0007C34B4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C64E759B26B1C4C6007C34B4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C64E759D26B1C5E4007C34B4 /* TableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelType.swift; sourceTree = "<group>"; };
+		C64E75A126B1C9A5007C34B4 /* TableViewCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModelType.swift; sourceTree = "<group>"; };
+		C64E75A326B1CA97007C34B4 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
+		C64E75A526B1D175007C34B4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C64E75A726B1D53E007C34B4 /* DetailViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelType.swift; sourceTree = "<group>"; };
+		C64E75A926B1D577007C34B4 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		C64E75AB26B2A2E6007C34B4 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		C64E75AE26B2ADE2007C34B4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C64E75B026B2AE14007C34B4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		C64E75B626B2B582007C34B4 /* TableCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C64E755B26B1A6E2007C34B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64E757126B1A6ED007C34B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64E757C26B1A6ED007C34B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C64E755526B1A6E2007C34B4 = {
+			isa = PBXGroup;
+			children = (
+				C64E756026B1A6E3007C34B4 /* Forum Rugby Club */,
+				C64E757726B1A6ED007C34B4 /* Forum Rugby ClubTests */,
+				C64E758226B1A6ED007C34B4 /* Forum Rugby ClubUITests */,
+				C64E755F26B1A6E3007C34B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C64E755F26B1A6E3007C34B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C64E755E26B1A6E3007C34B4 /* Forum Rugby Club.app */,
+				C64E757426B1A6ED007C34B4 /* Forum Rugby ClubTests.xctest */,
+				C64E757F26B1A6ED007C34B4 /* Forum Rugby ClubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C64E756026B1A6E3007C34B4 /* Forum Rugby Club */ = {
+			isa = PBXGroup;
+			children = (
+				C64E75AD26B2ADCE007C34B4 /* Coordinators */,
+				C64E759F26B1C65C007C34B4 /* ViewModel */,
+				C64E75A026B1C668007C34B4 /* Prorocols */,
+				C64E759726B1B3F7007C34B4 /* Model */,
+				C64E759826B1B40C007C34B4 /* View */,
+				C64E756126B1A6E3007C34B4 /* AppDelegate.swift */,
+				C64E756326B1A6E3007C34B4 /* SceneDelegate.swift */,
+				C64E756A26B1A6EC007C34B4 /* Assets.xcassets */,
+				C64E756C26B1A6EC007C34B4 /* LaunchScreen.storyboard */,
+				C64E756F26B1A6EC007C34B4 /* Info.plist */,
+			);
+			path = "Forum Rugby Club";
+			sourceTree = "<group>";
+		};
+		C64E757726B1A6ED007C34B4 /* Forum Rugby ClubTests */ = {
+			isa = PBXGroup;
+			children = (
+				C64E757826B1A6ED007C34B4 /* Forum_Rugby_ClubTests.swift */,
+				C64E757A26B1A6ED007C34B4 /* Info.plist */,
+			);
+			path = "Forum Rugby ClubTests";
+			sourceTree = "<group>";
+		};
+		C64E758226B1A6ED007C34B4 /* Forum Rugby ClubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C64E758326B1A6ED007C34B4 /* Forum_Rugby_ClubUITests.swift */,
+				C64E758526B1A6ED007C34B4 /* Info.plist */,
+			);
+			path = "Forum Rugby ClubUITests";
+			sourceTree = "<group>";
+		};
+		C64E759726B1B3F7007C34B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C64E759526B1B0F0007C34B4 /* Profile.swift */,
+				C64E75AB26B2A2E6007C34B4 /* ControllerFactory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C64E759826B1B40C007C34B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C64E759126B1A77D007C34B4 /* TableViewController.swift */,
+				C64E75A526B1D175007C34B4 /* DetailViewController.swift */,
+				C64E759326B1AEB4007C34B4 /* PlayerTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C64E759F26B1C65C007C34B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C64E759B26B1C4C6007C34B4 /* ViewModel.swift */,
+				C64E75A326B1CA97007C34B4 /* TableViewCellViewModel.swift */,
+				C64E75A926B1D577007C34B4 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C64E75A026B1C668007C34B4 /* Prorocols */ = {
+			isa = PBXGroup;
+			children = (
+				C64E759D26B1C5E4007C34B4 /* TableViewModelType.swift */,
+				C64E75A726B1D53E007C34B4 /* DetailViewModelType.swift */,
+				C64E75A126B1C9A5007C34B4 /* TableViewCellViewModelType.swift */,
+			);
+			path = Prorocols;
+			sourceTree = "<group>";
+		};
+		C64E75AD26B2ADCE007C34B4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C64E75AE26B2ADE2007C34B4 /* Coordinator.swift */,
+				C64E75B026B2AE14007C34B4 /* MainCoordinator.swift */,
+				C64E75B626B2B582007C34B4 /* TableCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C64E755D26B1A6E2007C34B4 /* Forum Rugby Club */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64E758826B1A6ED007C34B4 /* Build configuration list for PBXNativeTarget "Forum Rugby Club" */;
+			buildPhases = (
+				C64E755A26B1A6E2007C34B4 /* Sources */,
+				C64E755B26B1A6E2007C34B4 /* Frameworks */,
+				C64E755C26B1A6E2007C34B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Forum Rugby Club";
+			productName = "Forum Rugby Club";
+			productReference = C64E755E26B1A6E3007C34B4 /* Forum Rugby Club.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C64E757326B1A6ED007C34B4 /* Forum Rugby ClubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64E758B26B1A6ED007C34B4 /* Build configuration list for PBXNativeTarget "Forum Rugby ClubTests" */;
+			buildPhases = (
+				C64E757026B1A6ED007C34B4 /* Sources */,
+				C64E757126B1A6ED007C34B4 /* Frameworks */,
+				C64E757226B1A6ED007C34B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C64E757626B1A6ED007C34B4 /* PBXTargetDependency */,
+			);
+			name = "Forum Rugby ClubTests";
+			productName = "Forum Rugby ClubTests";
+			productReference = C64E757426B1A6ED007C34B4 /* Forum Rugby ClubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C64E757E26B1A6ED007C34B4 /* Forum Rugby ClubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64E758E26B1A6ED007C34B4 /* Build configuration list for PBXNativeTarget "Forum Rugby ClubUITests" */;
+			buildPhases = (
+				C64E757B26B1A6ED007C34B4 /* Sources */,
+				C64E757C26B1A6ED007C34B4 /* Frameworks */,
+				C64E757D26B1A6ED007C34B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C64E758126B1A6ED007C34B4 /* PBXTargetDependency */,
+			);
+			name = "Forum Rugby ClubUITests";
+			productName = "Forum Rugby ClubUITests";
+			productReference = C64E757F26B1A6ED007C34B4 /* Forum Rugby ClubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C64E755626B1A6E2007C34B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C64E755D26B1A6E2007C34B4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C64E757326B1A6ED007C34B4 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C64E755D26B1A6E2007C34B4;
+					};
+					C64E757E26B1A6ED007C34B4 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C64E755D26B1A6E2007C34B4;
+					};
+				};
+			};
+			buildConfigurationList = C64E755926B1A6E2007C34B4 /* Build configuration list for PBXProject "Forum Rugby Club" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C64E755526B1A6E2007C34B4;
+			productRefGroup = C64E755F26B1A6E3007C34B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C64E755D26B1A6E2007C34B4 /* Forum Rugby Club */,
+				C64E757326B1A6ED007C34B4 /* Forum Rugby ClubTests */,
+				C64E757E26B1A6ED007C34B4 /* Forum Rugby ClubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C64E755C26B1A6E2007C34B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64E756E26B1A6EC007C34B4 /* LaunchScreen.storyboard in Resources */,
+				C64E756B26B1A6EC007C34B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64E757226B1A6ED007C34B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64E757D26B1A6ED007C34B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C64E755A26B1A6E2007C34B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64E75A226B1C9A5007C34B4 /* TableViewCellViewModelType.swift in Sources */,
+				C64E759426B1AEB4007C34B4 /* PlayerTableViewCell.swift in Sources */,
+				C64E759626B1B0F0007C34B4 /* Profile.swift in Sources */,
+				C64E756226B1A6E3007C34B4 /* AppDelegate.swift in Sources */,
+				C64E759226B1A77E007C34B4 /* TableViewController.swift in Sources */,
+				C64E759E26B1C5E4007C34B4 /* TableViewModelType.swift in Sources */,
+				C64E75AF26B2ADE2007C34B4 /* Coordinator.swift in Sources */,
+				C64E75A826B1D53E007C34B4 /* DetailViewModelType.swift in Sources */,
+				C64E75AA26B1D577007C34B4 /* DetailViewModel.swift in Sources */,
+				C64E75A426B1CA97007C34B4 /* TableViewCellViewModel.swift in Sources */,
+				C64E75A626B1D175007C34B4 /* DetailViewController.swift in Sources */,
+				C64E759C26B1C4C6007C34B4 /* ViewModel.swift in Sources */,
+				C64E75AC26B2A2E7007C34B4 /* ControllerFactory.swift in Sources */,
+				C64E75B726B2B582007C34B4 /* TableCoordinator.swift in Sources */,
+				C64E75B126B2AE14007C34B4 /* MainCoordinator.swift in Sources */,
+				C64E756426B1A6E3007C34B4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64E757026B1A6ED007C34B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64E757926B1A6ED007C34B4 /* Forum_Rugby_ClubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64E757B26B1A6ED007C34B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64E758426B1A6ED007C34B4 /* Forum_Rugby_ClubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C64E757626B1A6ED007C34B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C64E755D26B1A6E2007C34B4 /* Forum Rugby Club */;
+			targetProxy = C64E757526B1A6ED007C34B4 /* PBXContainerItemProxy */;
+		};
+		C64E758126B1A6ED007C34B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C64E755D26B1A6E2007C34B4 /* Forum Rugby Club */;
+			targetProxy = C64E758026B1A6ED007C34B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C64E756C26B1A6EC007C34B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C64E756D26B1A6EC007C34B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C64E758626B1A6ED007C34B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C64E758726B1A6ED007C34B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C64E758926B1A6ED007C34B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Forum Rugby Club/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Konovalov.Forum-Rugby-Club";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C64E758A26B1A6ED007C34B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Forum Rugby Club/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Konovalov.Forum-Rugby-Club";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C64E758C26B1A6ED007C34B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Forum Rugby ClubTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Konovalov.Forum-Rugby-ClubTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Forum Rugby Club.app/Forum Rugby Club";
+			};
+			name = Debug;
+		};
+		C64E758D26B1A6ED007C34B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Forum Rugby ClubTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Konovalov.Forum-Rugby-ClubTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Forum Rugby Club.app/Forum Rugby Club";
+			};
+			name = Release;
+		};
+		C64E758F26B1A6ED007C34B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Forum Rugby ClubUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Konovalov.Forum-Rugby-ClubUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Forum Rugby Club";
+			};
+			name = Debug;
+		};
+		C64E759026B1A6ED007C34B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34VCU6GX65;
+				INFOPLIST_FILE = "Forum Rugby ClubUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Konovalov.Forum-Rugby-ClubUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Forum Rugby Club";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C64E755926B1A6E2007C34B4 /* Build configuration list for PBXProject "Forum Rugby Club" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64E758626B1A6ED007C34B4 /* Debug */,
+				C64E758726B1A6ED007C34B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64E758826B1A6ED007C34B4 /* Build configuration list for PBXNativeTarget "Forum Rugby Club" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64E758926B1A6ED007C34B4 /* Debug */,
+				C64E758A26B1A6ED007C34B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64E758B26B1A6ED007C34B4 /* Build configuration list for PBXNativeTarget "Forum Rugby ClubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64E758C26B1A6ED007C34B4 /* Debug */,
+				C64E758D26B1A6ED007C34B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64E758E26B1A6ED007C34B4 /* Build configuration list for PBXNativeTarget "Forum Rugby ClubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64E758F26B1A6ED007C34B4 /* Debug */,
+				C64E759026B1A6ED007C34B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C64E755626B1A6E2007C34B4 /* Project object */;
+}
