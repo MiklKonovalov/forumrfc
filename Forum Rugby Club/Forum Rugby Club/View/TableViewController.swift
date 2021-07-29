@@ -13,6 +13,11 @@ class TableViewController: UIViewController {
     //Чтобы достать информацию у нас должна быть ссылка на ВьюМодель
     private var viewModel: TableViewViewModelType?
     
+    
+    var mainCoordinator: TableCoordinator?
+    //let navigationController = UINavigationController()
+    
+    
     let tablePlayersView = UITableView(frame: .zero, style: .grouped)
     let cellID = "cellID"
     
@@ -83,7 +88,7 @@ extension TableViewController: UITableViewDataSource {
         viewModel.selectRow(atIndexPath: indexPath)
         //Осуществляем переход
         
-        
+        mainCoordinator?.start()
         
     }
     

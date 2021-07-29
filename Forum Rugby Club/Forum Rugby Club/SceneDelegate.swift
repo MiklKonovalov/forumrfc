@@ -10,11 +10,19 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var mainCoordinator: TableCoordinator?
 
     let tableViewController = TableViewController()
-    let mainCoordinator = MainCoordinator()
+    let factory = ControllerFactoryImpl()
+    
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        //let navigationController = UINavigationController()
+        
+        //mainCoordinator = TableCoordinator(navigationController: navigationController, factory: factory)
+        
+        //mainCoordinator?.start()
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         

@@ -12,12 +12,15 @@ class MainCoordinator: Coordinator {
     var coordinators: [Coordinator] = []
     let factory = ControllerFactoryImpl()
     
-    init() {
+    var navigationController: UINavigationController
+    
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
         
         let detail = configureDetailViewController()
         let table = configureTableViewController()
-        coordinators.append(table)
         
+        coordinators.append(table)
     }
     
     func configureDetailViewController() -> UINavigationController {
